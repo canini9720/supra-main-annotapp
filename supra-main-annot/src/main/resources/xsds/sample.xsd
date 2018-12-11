@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://www.supra.com/supra/service" targetNamespace="http://www.supra.com/supra/service">
 
-<xs:element name="shiporder">
+<xs:element name="shiporderRequest">
   <xs:complexType>
     <xs:sequence>
       <xs:element name="orderperson" type="xs:string"/>
@@ -29,5 +29,12 @@
     <xs:attribute name="orderid" type="xs:string" use="required"/>
   </xs:complexType>
 </xs:element>
-
+ <xs:element name="shiporderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="responseCode" type="xs:int" />
+        <xs:element name="responseDesc" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema> 
