@@ -9,9 +9,7 @@
 
 
 	<properties>
-		<spring-framework.version>4.3.13.RELEASE</spring-framework.version><!-- 
-			4.1.2.RELEASE --><!-- 
-			4.3.13.RELEASE -->
+		<spring-framework.version>4.3.13.RELEASE</spring-framework.version>
 		<hibernate.version>5.2.11.Final</hibernate.version>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
@@ -41,7 +39,7 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
@@ -67,7 +65,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- Abhi addedd -->
+		<!-- Common addedd -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
@@ -93,6 +91,23 @@
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
+		</dependency>
+		
+		<dependency>
+			    <groupId>net.logstash.log4j</groupId>
+			    <artifactId>jsonevent-layout</artifactId>
+			    <version>1.7</version>
+			</dependency>
+		
+			<dependency>
+			    <groupId>net.minidev</groupId>
+			    <artifactId>json-smart</artifactId>
+			    <version>1.1.1</version>
+			</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.2.4</version>
 		</dependency>
 
 		<dependency>
@@ -172,6 +187,7 @@
 				<version>2.4</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<warSourceDirectory>${basedir}/src/webapp</warSourceDirectory>
 				</configuration>
 			</plugin>
 
