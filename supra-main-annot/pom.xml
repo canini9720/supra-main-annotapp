@@ -45,6 +45,12 @@
 			<artifactId>spring-data-jpa</artifactId>
 			<version>1.11.10.RELEASE</version>
 		</dependency>
+		<!-- Spring test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring-framework.version}</version>
+	</dependency>
 		<!--Oracle Driver -->
 		<dependency>
 			<groupId>com.oracle</groupId>
@@ -147,6 +153,12 @@
 			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>0.9.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
